@@ -1,0 +1,114 @@
+body {
+    font-family: 'Josefin Slab', serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+
+.img {
+    display: flex;
+    width: 40%;
+    height:94%;
+    margin: 1% 1% 1% 1%;
+    background: url(./assets/backround-image.jpg) no-repeat center;
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.img-description {
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-size:100%;
+    color: white;
+    font-weight: 900;
+    text-shadow: -1px -1px 0 #000, 1px -1px #000, -1px 1px 0 #000;
+    font-family: 'Josefin Slab', serif; 
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.form {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 900;
+    width: 60%;
+    height:94%;
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+}
+
+.form > * {
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+
+.form-label {
+    font-weight: 900;
+    font-size: 20px;
+    display: block;
+    transition: all 0.5s;
+    transform: translateY(-3.4rem);
+}
+
+.form-input {
+    border: 2px solid gray;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.2rem;
+    border-radius: 0.2rem;
+    width: 100%;
+    display: block;
+    transition: all 0.5s;
+    margin-top:5%;
+    padding-right:10%;
+}
+
+.form-input:focus {
+    transition: all 0.2s;
+    outline: none;
+    border: 2px solid blue;
+}
+
+.form-input:placeholder-shown + .form-label {
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+form {
+    padding-top:5%;
+    width: 80%;
+    margin-left: 0%;
+    background-color:rgb(185, 178, 178);
+
+}
+
+.form h1 {
+    padding-top:30px;
+}
+
+.inputs {
+    display:flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.inputs > :last-child {
+    padding-left: 10%;
+}
