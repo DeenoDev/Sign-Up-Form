@@ -13,6 +13,9 @@
 </head>
 <body>
     <div class="img">
+        <div class="img-logo">
+            <img class="odin-img" src="/assets/odin-logo.png" alt="Odin-logo">
+        </div>
         <div class="img-description">
             <p class="img-info">Photo by Aron Visuals</p>
             <a href="https://unsplash.com/photos/LSFuPFE9vKE">
@@ -23,7 +26,7 @@
     <div class="form">
         <div class="form-info">
             <h1>
-                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span class="italics">now</span> to get started.
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <span class="italics">now</span> to get started.
                 <br>
                 <br>
                 You <span class="italics">know</span> you want to.
@@ -33,15 +36,16 @@
         
         <form action="">
             <h1>Let's do this!</h1>
+            <br>
             <!-- First Name and Last Name Section -->
             <div class="inputs">
                 <div class="first-name">
-                    <input type="text" class="form-input" id="first-name" placeholder="First Name">
+                    <input type="text" class="form-input" id="first-name" placeholder="First Name" required>
                     <label for="first-name" class="form-label">First Name</label>
                 </div>
 
                 <div class="last-name">
-                    <input type="text" class="form-input" id="last-name" placeholder="Last Name">
+                    <input type="text" class="form-input" id="last-name" placeholder="Last Name" required>
                     <label for="last-name" class="form-label">Last Name</label>
                 </div>
             </div>
@@ -49,12 +53,12 @@
             <!-- Email and Phone Number Section -->
             <div class="inputs">
                 <div class="email">
-                    <input type="email" class="form-input" id="email" placeholder="Email">
+                    <input type="email" class="form-input" id="email" placeholder="Email" required>
                     <label for="email" class="form-label">Email</label>
                 </div>
 
                 <div class="phone">
-                    <input type="tel" class="form-input" id="phone" placeholder="Phone Number">
+                    <input type="tel" class="form-input" id="phone" placeholder="Phone Number" required>
                     <label for="phone" class="form-label">Phone Number</label>
                 </div>
             </div>
@@ -62,22 +66,24 @@
             <!-- Password Section -->
             <div class="inputs">
                 <div class="password">
-                    <input type="password" class="form-input" id="password" placeholder="Password">
+                    <input type="password" class="form-input" id="password" placeholder="Password" required>
                     <label for="password" class="form-label">Password</label>
                 </div>
 
                 <div class="confirm-password">
-                    <input type="password" class="form-input" id="confirm-password" placeholder="Confirm Password">
+                    <input type="password" class="form-input" id="confirm-password" placeholder="Confirm Password" required>
                     <label for="confirm-password" class="form-label">Confirm Password</label>
                 </div>
             </div>
+            <div class="form-end">
+                <div class="errorMessage"></div>
+                <button class="btn" type="submit">Create Account</button>
+                <h1>Already have an account? <a href="#" class="login">Log in</a></h1>
+            </div>
         </form>
-
-
-
     </div>
 
    
-    
+ <script src="main.js"></script>   
 </body>
 </html>

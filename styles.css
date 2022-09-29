@@ -8,6 +8,11 @@ body {
     background-color: white;
 }
 
+body h1 {
+
+    /* font-size: 20px; */
+}
+
 
 .img {
     display: flex;
@@ -48,7 +53,7 @@ a {
     height:94%;
     margin: 0;
     padding: 0;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .form > * {
@@ -111,4 +116,65 @@ form {
 
 .inputs > :last-child {
     padding-left: 10%;
+}
+
+.form-end {
+    margin-top:20px;
+    position: absolute;
+    font-size: 15px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+    background:#7e12d6;
+    color: #dfdedf;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(139, 139, 139);
+    border-right: 2px solid rgb(139, 139, 139);
+    box-shadow:0px 0.5px 1px rgba(0,0,0,0.1),
+     inset 0px 0.5px 1px rgba(255,255,255,0.5),
+     0px 0px 0px 0.5px rgba(0,0,0,0.12);
+}
+
+.btn:hover {
+    outline: 0;
+    box-shadow:inset 0px 0.8px 1px -0.25px rgba(255, 255, 255, 0.2),
+     0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+}
+
+.login {
+    color: #7e12d6;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.errorMessage {
+    font-size:20px;
+    font-weight:900;
+    color: red;
+
+}
+
+.img-logo {
+    width: 10%;
+    height: fit-content;
+    position: fixed;
+    margin-left:27%;
+    margin-top: 1%;
+    /* background-color: rgba(0,0,0,0.178); */
+}
+
+.odin-img {
+    width: 100%;
 }
