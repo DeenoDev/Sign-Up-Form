@@ -24,12 +24,35 @@ const submit = (e) => {
         errorMessage.textContent = "Passwords don't match";
         return;
     }
-    if(password.value.length < 8){
-        password.classList.add('error');
-        errorMessage.textContent = "Password needs to be at least 8 characters long.";
+    // if(!phone.value.match(/(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})/)) {
+    //     phone.classList.add('error');
+    //     errorMessage.textContent = "Phone number needs to be exactly 10 numbers";
+    //     return;
+    //}
+     if(password.value.length < 8){
+         password.classList.add('error');
+         errorMessage.textContent = "Password needs to be at least 8 characters long.";
+         return;
+     }
+     if(!password.value.match(/[a-z]/)){
+        password.classList.add("error");
+        errorMessage.textContent = "Password needs to have at least 1 lower case letter.";
         return;
-    }
-    if(!password.value.match())
+     }
+     if(!password.value.match(/[A-Z]/)){
+        password.classList.add("error");
+        errorMessage.textContent = "Password needs to have at least 1 upper case letter.";
+        return; 
+     }
+     if(!password.value.match(/\d+/g)){
+        password.classList.add("error");
+        errorMessage.textContent = "Password needs to have at least 1 number.";
+        return; 
+     }
+     errorMessage.textContent = "Form added succesfully";
+     setTimeout(() => {
+        window.location.reload();
+     },5000);
 };
 
 const form = document.querySelector("form");
